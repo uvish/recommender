@@ -1,6 +1,7 @@
 package com.uvish.recommender;
 
 import com.uvish.recommender.dto.Customer;
+import com.uvish.recommender.dto.Product;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,11 @@ public class Controller {
     @GetMapping("/getUser")
     public ResponseEntity<?> getUser(@RequestBody Customer customer) {
         return new ResponseEntity<>(service.getUser(customer.getCustomer_name()),HttpStatus.OK);
+    }
+
+    @GetMapping("/getByProduct")
+    public ResponseEntity<?> getUser(@RequestBody Product product) {
+        return new ResponseEntity<>(service.getByProduct(product.getProduct()),HttpStatus.OK);
     }
 
 
