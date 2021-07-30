@@ -18,4 +18,5 @@ public class Service {
     public List<UserData> getByProduct(String product){
         return repository.findTop5ByProduct(product);
     }
+    
 }

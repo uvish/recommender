@@ -1,3 +1,4 @@
+
 TRUNCATE TABLE data;
 INSERT INTO data(id,publication_number,country_code,publication_kind_code,publication_date,pdf_pn,pdf_pgs,publication_year,doc_name,docid,product,email,truid,customer_name) VALUES (1,'AU541447B','AU','B2','31-01-1985','AU541447B2',31,1985,'LIGHTHOUSE_AU','AU541447B219801121','Pro','jiangmn@qinghangip.com','5880f4b0-b9ef-11ea-b8e8-e339c049f8c9','CHANGZHOU QINGHANG INTELLECTUAL PROPERTY SVC CO LTD');
 INSERT INTO data(id,publication_number,country_code,publication_kind_code,publication_date,pdf_pn,pdf_pgs,publication_year,doc_name,docid,product,email,truid,customer_name) VALUES (2,'BR102019026734A2','BR','A2','29-06-2021','BR102019026734A2',21,2021,'LIGHTHOUSE_BR','BR102019026734A220210629','Pro','mariefe.gutierrez@emerson.com','bb0ff850-ea75-11e9-8ae1-036f8dad0984','EMERSON CLIMATE TECHNOLOGIES');

@@ -9,3 +9,4 @@ public interface Repository extends JpaRepository<UserData,Long> {
     List<UserData> findByCustomerName(String customer);
     List<UserData> findTop5ByProduct(String product);
 }
+
