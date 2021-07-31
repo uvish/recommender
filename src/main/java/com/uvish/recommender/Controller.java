@@ -17,13 +17,13 @@ import java.util.Map;
 @CrossOrigin()
 public class Controller {
     Service service;
-    @GetMapping("/getUser")
+    @PostMapping("/getUser")
     public ResponseEntity<?> getUser(@RequestBody Customer customer) {
         return new ResponseEntity<>(service.getUser(customer.getCustomer_name()),HttpStatus.OK);
     }
 
-    @GetMapping("/getByProduct")
-    public ResponseEntity<?> getUser(@RequestBody Product product) {
+    @PostMapping("/getByProduct")
+    public ResponseEntity<?> getProduct(@RequestBody Product product) {
         return new ResponseEntity<>(service.getByProduct(product.getProduct()),HttpStatus.OK);
     }
 
