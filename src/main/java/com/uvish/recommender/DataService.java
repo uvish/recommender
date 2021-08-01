@@ -1,16 +1,19 @@
 package com.uvish.recommender;
 
-import lombok.AllArgsConstructor;
-import org.apache.catalina.User;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
-@org.springframework.stereotype.Service
-@AllArgsConstructor
+@Service
 @Transactional
-public class Service {
+public class DataService {
     Repository repository;
+
+    public DataService(Repository repository) {
+        this.repository = repository;
+    }
+
     public List<UserData> getUser(String customer_name){
     return repository.findByCustomerName(customer_name);
     }
