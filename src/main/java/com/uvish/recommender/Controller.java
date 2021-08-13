@@ -23,7 +23,7 @@ public class Controller {
         return new ResponseEntity<>(service.getUser(customer.getCustomer_name()),HttpStatus.OK);
     }
 
-    @PostMapping("/getByProduct")
+    @PostMapping("/getByPro")
     public ResponseEntity<?> getProduct(@RequestBody Product product) {
         return new ResponseEntity<>(service.getByProduct(product.getProduct()),HttpStatus.OK);
     }
